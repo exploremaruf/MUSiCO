@@ -1,0 +1,109 @@
+
+a{
+    text-decoration:none;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: wheat; /* Light background color */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Header and Navbar */
+header {
+    background: linear-gradient(90deg, #008080, #50e3c2); /* Gradient background */
+    padding: 1rem 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ffffff; /* White text for brand */
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffd700; /* Golden color on hover */
+}
+
+/* Main content */
+.song-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
+}
+
+.song-info {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.song-info span {
+    font-weight: bold;
+    color: #007bff; /* Primary color */
+}
+
+.lyrics {
+    background: #ffffff; /* White background for lyrics */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for container */
+    padding: 1.5rem;
+    line-height: 1.8;
+    text-align: center;
+}
+
+.lyrics p {
+    margin: 0.5rem 0;
+}
+
+.lyrics p:first-of-type {
+    font-weight: bold;
+    color: #4a90e2; /* Color for section titles */
+}
+
+/* Footer */
+footer {
+    background:teal; /* Matching footer color */
+    color: #ffffff; /* White text */
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    border-top: 2px solid #50e3c2; /* Decorative border */
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 1rem;
+    }
+
+    .song-title {
+        font-size: 2rem;
+    }
+
+    .song-info {
+        font-size: 1rem;
+    }
+}

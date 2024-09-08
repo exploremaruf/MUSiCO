@@ -1,0 +1,169 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, sans-serif;
+
+
+  
+}
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+
+}
+
+.container{
+    background-image: url("../image/page1bg.png");
+    background-size: cover;
+    height: 100%;
+    background-color: wheat;
+    background-blend-mode: screen;
+
+
+
+}
+
+
+.company{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+}
+.company h1{
+    font-size: 70px;
+   
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: "Playwrite CU", cursive;
+  
+    letter-spacing: 2px;
+    transition: color 0.5s ease;
+    cursor: pointer;
+    transition: color 0.5s ease;
+    transition: background-color 0.5s ease;
+    transition: transform 0.5s ease;
+    transform: translateY(10px);
+   
+    
+    
+}
+
+.company img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    
+}
+
+
+
+.middle{
+    background-color: aliceblue;
+    width: 800px;
+    height: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.5s ease;
+    
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 48px;
+    text-align: center;
+    position: relative;
+    
+}
+
+.mfc{
+   margin-top: 210px;
+}
+
+.middle img{
+    align-items: center;
+    width: 100px;
+    height: auto;
+    margin: 0 auto;
+    
+    padding-inline: 60px;
+}
+
+.pages a{
+    padding-inline: 40px;
+
+    color: rgb(0, 0, 0);
+    
+}
+
+.footer{
+    height: 70px;
+    width: auto;
+    margin-top: 50px;
+    background-color: teal;
+    color: teal;
+    border: 2px solid teal;
+}
+
+.footer p{
+    text-align: center;
+    font-size: 19px;
+    color: white;
+    margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+    .company {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .company img {
+        margin: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .middle {
+        margin: 1rem 0;
+    }
+
+    .img {
+        flex-direction: column;
+    }
+
+    .img img {
+        width: 80px; /* Adjust for smaller screens */
+        margin-bottom: 0.5rem;
+    }
+
+    .pages {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .pages a {
+        font-size: 1rem; /* Adjust for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .company h1 {
+        font-size: 1.5rem; /* Smaller text size for very small screens */
+    }
+
+    .img img {
+        width: 60px; /* Further reduce size on very small screens */
+    }
+
+    .pages a {
+        font-size: 0.9rem; /* Smaller text size for very small screens */
+    }
+}
